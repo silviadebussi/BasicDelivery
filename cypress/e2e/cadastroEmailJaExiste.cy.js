@@ -10,7 +10,7 @@ describe('Cadastro - Email já cadastrado', () => {
 
    
     cy.on('window:alert', (msg) => {
-      expect(msg).to.contain('Email já cadastrado');
+      expect(msg).to.contain('email already exists');
     });
 
     cy.contains('Criar conta').click();

@@ -9,7 +9,7 @@ describe('Cadastro - Senha vazia', () => {
     
 
     cy.on('window:alert', (msg) => {
-      expect(msg.toLowerCase()).to.contain('erro');
+      expect(msg.toLowerCase()).to.contain('preencha todos os campos');
     });
 
     cy.contains('Criar conta').click();
